@@ -80,8 +80,8 @@ namespace WPFTartalyok.Models
             if (Terfogat < this.aktLiter + mennyit)
             {
                 //todo Ez nem szép! Helyette kivételt kellene dobni!
-                Console.WriteLine("Hiba! Nem lehet ennyit beletölteni!");
-                return;
+                throw new OverflowException("Hiba! Nem lehet ennyit beletölteni!");
+                
             }
             this.aktLiter += mennyit;
         }
