@@ -81,7 +81,6 @@ namespace WPFTartalyok.Models
             {
                 //todo Ez nem szép! Helyette kivételt kellene dobni!
                 throw new OverflowException("Hiba! Nem lehet ennyit beletölteni!");
-                
             }
             this.aktLiter += mennyit;
         }
